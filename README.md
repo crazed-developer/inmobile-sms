@@ -29,6 +29,14 @@ public interface InMobileService {
 }
 ```
 
+You also need to configure your runtime with endpoint information:
+
+for Quarkus that means adding this to your application.properties file
+```
+dk.nobelium.inmobile.boundary.InMobileService/mp-rest/url=https://mm.inmobile.dk/Api
+dk.nobelium.inmobile.boundary.InMobileService/mp-rest/scope=javax.inject.Singleton
+```
+
 And enables you to have your controller method as simple as this:
 
 ```java
