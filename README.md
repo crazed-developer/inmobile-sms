@@ -94,3 +94,25 @@ So how to construct those messages, that's simple too.
         );
 ```
 
+How to use then ?
+
+Well you have to clone then build + install and add the following maven coordinates:
+
+basically do this:
+```console
+>https://github.com/crazed-developer/inmobile-sms.git
+>mvn install
+```
+
+Import in your project pom.xml file:
+
+```xml
+    <dependency>
+      <groupId>dk.nobelium</groupId>
+      <artifactId>inmobile-sms</artifactId>
+      <version>1.0.7-SNAPSHOT</version>
+    </dependency>
+```
+
+The library ARE NOT available on Maven Central
+
